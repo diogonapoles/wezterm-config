@@ -1,6 +1,4 @@
 local wezterm = require('wezterm')
-local colors = require('colors.custom')
-local fonts = require('config.fonts')
 local platform = require('utils.platform')()
 
 local config = {}
@@ -72,7 +70,10 @@ return {
    window_frame = {
       active_titlebar_bg = '#1d2021',
       inactive_titlebar_bg = '#1d2021',
-      font = wezterm.font('GohuFont 11 Nerd Font Mono'),
+      font = wezterm.font(
+         'FiraCode Nerd Font Mono',
+         { style = 'Italic', weight = 'Bold', harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' } }
+      ),
       font_size = 13,
    },
    inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },

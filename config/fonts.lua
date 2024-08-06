@@ -1,22 +1,22 @@
 local wezterm = require('wezterm')
 
 return {
-   -- font = wezterm.font_with_fallback({
-   --    {
-   --       family = 'FiraCode Nerd Font Mono',
-   --       weight = 'Regular',
-   --       harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' },
-   --    },
-   --    -- { family = 'JetBrainsMono Nerd Font', weight = 'Regular' },
-   --    -- { family = 'JetBrains Mono' },
-   --    -- { family = 'FiraCode Nerd Font' },
-   --    -- { family = 'Noto Sans SC:style=Regular' },
-   --    -- { family = 'Noto Sans Mono CJK SC' },
-   --}),
-   font = wezterm.font(
-      'FiraCode Nerd Font Mono',
-      { weight = 'Regular', harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' } }
-   ),
+   font = wezterm.font_with_fallback({
+      {
+         family = 'FiraCode Nerd Font Mono',
+         weight = 'Regular',
+         harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' },
+      },
+      -- { family = 'JetBrainsMono Nerd Font', weight = 'Regular' },
+      -- { family = 'JetBrains Mono' },
+      -- { family = 'FiraCode Nerd Font' },
+      -- { family = 'Noto Sans SC:style=Regular' },
+      -- { family = 'Noto Sans Mono CJK SC' },
+   }),
+   -- font = wezterm.font(
+   --    'FiraCode Nerd Font Mono',
+   --    { weight = 'Regular', harfbuzz_features = { 'calt=1', 'clig=1', 'liga=1' } }
+   -- ),
 
    font_size = 12,
 
